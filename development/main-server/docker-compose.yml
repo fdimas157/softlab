@@ -1,0 +1,15 @@
+services:
+  be-kantor-absensi:
+    build: 
+      context: ../../../be-kantor-absensi
+      dockerfile: Dockerfile
+    image: simrs/bekantorabsensi
+    restart: on-failure
+    container_name: cbe-kantor-absensi
+    volumes:
+      - ./env/.be-kantor-absensi.env:/app/.env
+    ports:
+      - '8080:8080'
+    entrypoint: '/app/binary'
+    environment:
+      - TZ=Asia/Jakarta
