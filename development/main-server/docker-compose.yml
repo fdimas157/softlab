@@ -7,7 +7,7 @@ services:
     restart: on-failure
     container_name: cbe-kantor-absensi
     volumes:
-      - ./env/.be-kantor-absensi.env:/app/app/.env
+      - ./env/.kantor_absensi.env:/app/app.env
     ports:
       - '8080:8080'
     entrypoint: '/app/binary'
