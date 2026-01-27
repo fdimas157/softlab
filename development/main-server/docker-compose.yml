@@ -9,7 +9,7 @@ services:
     volumes:
       - ./env/.kantor_absensi.env:/app/app.env
     ports:
-      - '4080:8080'
+      - '4080:4080'
     entrypoint: '/app/binary'
     environment:
       - TZ=Asia/Jakarta
