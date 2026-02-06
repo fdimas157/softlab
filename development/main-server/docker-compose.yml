@@ -19,4 +19,4 @@ services:
     volumes:
        - ../../../apig-kantor-absensi:/app
     ports:
-      - '9090:9090'
+      - '4040:9090'
